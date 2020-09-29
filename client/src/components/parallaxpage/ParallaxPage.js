@@ -34,7 +34,6 @@ const ParallaxPage = () => {
         <div className='parallax-inner'>
           THOMAS FOYDEL
           <p className='parallax-inner-text'>
-            <br />
             thomasjfoydel@gmail.com
             <br />
             I build web apps

@@ -21,8 +21,8 @@ $medium: 600px;
 
   // MEDIUM
   @media screen and (max-width: $large) {
-    font-size: 8rem;
-    line-height: 10rem;
+    font-size: 7rem;
+    line-height: 8rem;
   }
   // SMALL
   @media screen and (max-width: $medium) {
@@ -32,10 +32,17 @@ $medium: 600px;
 }
 
 .parallax-inner-text {
-  font-size: 1.9rem;
+  font-size: 1.4rem;
   padding: 0 5rem;
   letter-spacing: 0.3rem;
-  line-height: 3rem;
+  line-height: 2rem;
+  padding: 0.8rem;
+  background: rgba(0, 0, 0, 0.278);
+  width: 90%;
+  max-width: 70rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  // height: auto;
   // MEDIUM
   @media screen and (max-width: $large) {
     // font-size: 8rem;
