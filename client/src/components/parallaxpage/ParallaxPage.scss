@@ -8,14 +8,13 @@ $medium: 600px;
 .parallax-inner {
   position: absolute;
   top: 10%;
-  left: 50%;
-  transform: translateX(-50%) scaleY(1.4);
+  transform: scaleY(1.1);
   width: 100%;
   margin-left: 0.9rem;
   height: 20rem;
   z-index: 4;
   text-align: center;
-  font-size: 10rem;
+  font-size: 9rem;
   letter-spacing: 1.8rem;
   color: white;
   cursor: default;
@@ -63,7 +62,7 @@ $medium: 600px;
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0.7) 100%
     ),
-    url('../../imgs/brutalism1.jpg');
+    url('../../imgs/background/brutalism1.jpg');
 }
 
 .parallax-image2 {
@@ -72,7 +71,7 @@ $medium: 600px;
       rgba(0, 0, 0, 0.5) 0%,
       rgba(0, 0, 0, 0.1) 100%
     ),
-    url('../../imgs/brutalism2.jpg');
+    url('../../imgs/background/brutalism2.jpg');
 }
 
 .parallax-image3 {
@@ -81,7 +80,8 @@ $medium: 600px;
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0.7) 100%
     ),
-    url('../../imgs/brutalism3.jpg');
+    url('../../imgs/me/bjj.jpg');
+  // url('../../imgs/background/brutalism3.jpg');
 }
 
 .parallax-image4 {
@@ -90,7 +90,7 @@ $medium: 600px;
       rgba(0, 0, 0, 0.34) 0%,
       rgba(0, 0, 0, 0.65) 100%
     ),
-    url('../../imgs/brutalism4.jpg');
+    url('../../imgs/background/brutalism4.jpg');
 }
 
 .parallax-image5 {
@@ -99,7 +99,7 @@ $medium: 600px;
       rgba(0, 0, 0, 0.37969738924050633) 0%,
       rgba(0, 0, 0, 0.5917227056962026) 100%
     ),
-    url('../../imgs/brutalism5.jpg');
+    url('../../imgs/background/brutalism5.jpg');
 }
 
 .parallax-image-container {
@@ -138,8 +138,32 @@ $medium: 600px;
   justify-content: center;
 }
 .infobox {
-  // margin-top: 15vh;
+  margin-left: 50%;
+  transform: translateX(-50%);
   background: #ccc;
-
+  width: 95rem;
   padding: 4rem 2rem;
+  // MEDIUM
+  @media screen and (max-width: $large) {
+    width: 60rem;
+  }
+  // SMALL
+  @media screen and (max-width: $medium) {
+    width: 40rem;
+  }
+}
+
+.me {
+  width: 29rem;
+  height: 29rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background-size: cover;
+  border-radius: 200px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 17%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url('../../imgs/me/headshot.jpg');
 }

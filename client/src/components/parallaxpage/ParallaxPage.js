@@ -27,15 +27,15 @@ const ParallaxPage = () => {
           <div className='parallax-image parallax-image1' />
         </div>
       </ParallaxLayer>
+      <ParallaxLayer offset={0.4} speed={-4.2}>
+        <div className='me'></div>
+      </ParallaxLayer>
       <ParallaxLayer offset={0} speed={1}>
         <div className='parallax-inner'>
-          THOMAS
-          <br />
-          FOYDEL
+          THOMAS FOYDEL
           <p className='parallax-inner-text'>
             <br />
-            - please hire me -
-            <br />
+            thomasjfoydel@gmail.com
             <br />
             I build web apps
             <br />
@@ -43,6 +43,7 @@ const ParallaxPage = () => {
           </p>
         </div>
       </ParallaxLayer>
+
       <ParallaxLayer offset={1} speed={0.2}>
         <div className='parallax-image-container'>
           <div className='parallax-image parallax-image2' />
@@ -119,8 +120,13 @@ const ParallaxPage = () => {
             University's full stack web development coding bootcamp. I also work
             as a tutor, grader, and learning assistant for Trilogy/2U's web
             development program. Before tech, I worked in healthcare (autism
-            therapy). I love building web apps, with a focus on the MERN stack,
-            though not exclusively.
+            therapy). I love building web apps. I focus on the MERN stack, but I
+            have also build with other technologies such as MySQL and
+            Handlebars. I am passionate about the potential for web technology
+            to bring people closer together in new ways and improve quality of
+            life. Some of my favorite things I've built with include web
+            sockets, webRTC, the Web Audio API, graphQL, and the react-spring
+            animation library.
           </p>
         </div>
       </ParallaxLayer>
