@@ -1,3 +1,6 @@
+$large: 992px;
+$medium: 600px;
+
 *,
 *::after,
 *::before {
@@ -60,12 +63,6 @@ a {
   overflow-y: scroll;
 }
 
-.app-subjectsandcards {
-  display: flex;
-  height: 67vh;
-  min-height: 40rem;
-}
-
 .backdropblur {
   background: rgba(10, 10, 10, 0.356);
   width: 100vw;
@@ -76,25 +73,29 @@ a {
 }
 
 .parallax-container {
-  height: 93vh;
+  // height: 93vh;
+  height: 100vh;
 }
-.parallax {
-  min-height: 93vh;
-  max-height: 93vh;
-  padding: 5rem 0;
-}
+// .parallax {
+//   // min-height: 93vh;
+//   // max-height: 93vh;
+//   min-height: 100vh;
+//   max-height: 100vh;
 
-.prlx-container {
-  padding: 0 2rem;
-}
+//   padding: 5rem 0;
+// }
+
+// .prlx-container {
+//   padding: 0 2rem;
+// }
 
 .parallax-innertextbox {
   position: absolute;
   width: 90%;
-  height: 15vh;
+  // height: 15vh;
   margin-left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  margin-top: 47vh;
+  // margin-top: 47vh;
   text-align: center;
   color: rgb(255, 255, 255);
   /* padding: 0.3rem; */
@@ -103,15 +104,12 @@ a {
   cursor: default;
 }
 
-.section {
-  height: 93vh;
-}
-.overlay {
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.brand-logo {
-  white-space: nowrap;
-}
+// .section {
+//   height: 100vh;
+// }
+// .overlay {
+//   height: 100%;
+//   width: 100%;
+//   // background: rgba(0, 0, 0, 0.5);
+//   background: #2c2c2c;
+// }

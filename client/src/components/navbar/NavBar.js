@@ -32,7 +32,10 @@ const NavBar = () => {
   };
 
   const mobileChangePage = (page) => {
-    updateState({ type: 'CHANGE_PAGE', payload: { page } });
+    updateState({ type: 'CHANGE_PAGE', payload: { page: appState.page - 1 } });
+    setTimeout(() => {
+      updateState({ type: 'CHANGE_PAGE', payload: { page } });
+    }, 100);
     setSidebaropen(false);
   };
 
@@ -41,7 +44,7 @@ const NavBar = () => {
       <div className='navbar-fixed'>
         <div className='navbar'>
           <div className='nav-wrapper'>
-            <div className='brand-logo' onClick={() => changePage(0)}>
+            <div className='name-logo' onClick={() => changePage(0)}>
               {/* <img src={icon} style={{ width: '2.6rem', height: '2rem' }}></img> */}
               Thomas Foydel
             </div>

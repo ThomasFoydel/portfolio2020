@@ -1,4 +1,7 @@
-$break-medium: 650px;
+// $break-medium: 650px;
+$large: 992px;
+$medium: 600px;
+
 .navbar-fixed {
   position: fixed;
   top: 0;
@@ -11,15 +14,16 @@ $break-medium: 650px;
   //   background: #22451b;
   background: #1b1b1b;
   color: rgb(231, 231, 231);
-  height: 5rem;
+  height: 5.2rem;
   width: 100%;
 }
 
-.brand-logo {
+.name-logo {
   float: left;
   font-size: 2.7rem;
   padding-left: 1rem;
   color: #ddd;
+  white-space: nowrap;
   cursor: pointer;
   &:hover {
     color: white;
@@ -48,14 +52,14 @@ $break-medium: 650px;
 
 .hide-on-large {
   display: none;
-  @media screen and (max-width: $break-medium) {
+  @media screen and (max-width: $medium) {
     display: initial;
   }
 }
 
 .hide-on-med-and-down {
   display: flex;
-  @media screen and (max-width: $break-medium) {
+  @media screen and (max-width: $medium) {
     display: none;
   }
 }
@@ -78,7 +82,7 @@ $break-medium: 650px;
 }
 
 .sidebarmenu {
-  top: 5.7rem;
+  top: 5rem;
   height: 95vh;
   color: #222;
   background: #ddd;
