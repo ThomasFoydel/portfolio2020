@@ -4,9 +4,10 @@ const app = express();
 const port = process.env.PORT || 8000;
 const cors = require('cors');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 require('dotenv').config();
 
-// put your routes here
+app.use(bodyParser.json());
 
 // static file declaration
 app.use(express.static(path.join(__dirname, 'client/build')));
