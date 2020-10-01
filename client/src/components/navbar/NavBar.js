@@ -13,10 +13,11 @@ const NavBar = () => {
   const handleMenuOpenClick = () => setSidebaropen(!sidebarOpen);
 
   const sidebarAnimationProps = useSpring({
-    position: 'absolute',
+    // position: 'absolute',
+    top: '10rem',
     opacity: sidebarOpen ? 1 : 0,
-    left: sidebarOpen ? 0 : -500,
-    config: config.wobbly,
+    left: sidebarOpen ? 0 : -250,
+    // config: config.wobbly,
   });
 
   const changePage = (page) => {
@@ -25,18 +26,33 @@ const NavBar = () => {
         type: 'CHANGE_PAGE',
         payload: { page: appState.page - 1 },
       });
+      setTimeout(() => {
+        updateState({ type: 'CHANGE_PAGE', payload: { page } });
+      }, 100);
+    } else {
+      updateState({
+        type: 'CHANGE_PAGE',
+        payload: { page },
+      });
     }
-    setTimeout(() => {
-      updateState({ type: 'CHANGE_PAGE', payload: { page } });
-    }, 100);
+    setSidebaropen(false);
   };
 
+  /*
+   updateState({
+        type: 'CHANGE_PAGE',
+        payload: { page: appState.page - 1 },
+      });
+      setTimeout(() => {
+        updateState({ type: 'CHANGE_PAGE', payload: { page } });
+      }, 100);
+      */
+
   const mobileChangePage = (page) => {
-    updateState({ type: 'CHANGE_PAGE', payload: { page: appState.page - 1 } });
-    setTimeout(() => {
-      updateState({ type: 'CHANGE_PAGE', payload: { page } });
-    }, 100);
     setSidebaropen(false);
+    setTimeout(() => {
+      changePage(page);
+    }, 200);
   };
 
   return (

@@ -81,8 +81,11 @@ $medium: 600px;
 }
 
 .sidebarmenu {
-  top: 5.2rem;
-  height: 95vh;
+  position: absolute;
+  top: 10.2rem;
+  height: 60vh;
+  min-height: 25rem;
+  border-radius: 0 0 30px 0;
   color: #222;
   background: #ddd;
   z-index: 4;
