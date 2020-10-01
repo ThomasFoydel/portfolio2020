@@ -1,21 +1,45 @@
-.icons {
-  background: rgba(255, 255, 255, 0.226);
-  transform: translateX(-50%);
-  margin-left: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 7.5rem;
-  position: absolute;
-  bottom: 10rem;
-  padding: 6px 5px 0 5px;
-}
+.contact-section {
+  .icons {
+    background: rgba(255, 255, 255, 0.226);
+    transform: translateX(-50%);
+    margin-left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 7.5rem;
+    position: absolute;
+    bottom: 10rem;
+    padding: 6px 5px 0 5px;
+  }
 
-.icon {
-  height: 5rem;
-  margin: 0 0.5rem;
-  background: black;
-  &:hover {
-    filter: invert(1);
+  .icon {
+    height: 5rem;
+    margin: 0 0.5rem;
+    background: black;
+    &:hover {
+      filter: invert(1);
+    }
+  }
+  .form {
+    width: 80%;
+    min-width: 30rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 24rem;
+    background: rgba(255, 255, 255, 0.226);
+    text-align: center;
+    padding: 2rem 5rem;
+    input,
+    textarea {
+      width: 100%;
+    }
+    textarea {
+      height: 6rem;
+    }
+    button {
+      padding: 0.5rem;
+      font-size: 1.6rem;
+    }
   }
 }

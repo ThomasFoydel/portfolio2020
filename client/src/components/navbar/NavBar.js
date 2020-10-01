@@ -14,7 +14,7 @@ const NavBar = () => {
 
   const sidebarAnimationProps = useSpring({
     // position: 'absolute',
-    top: '10rem',
+    top: '5.2rem',
     opacity: sidebarOpen ? 1 : 0,
     left: sidebarOpen ? 0 : -250,
     // config: config.wobbly,

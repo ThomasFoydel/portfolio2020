@@ -22,19 +22,12 @@ const ContactSection = () => {
   return (
     <div className='contact-section'>
       <div className='form'>
-        Name:
-        <br />
+        <p>Name:</p>
         <input value={name} type='text' id='name' onChange={handleChange} />
-        <br />
-        E-mail:
-        <br />
+        <p>E-mail:</p>
         <input value={email} type='email' id='email' onChange={handleChange} />
-        <br />
-        Message:
-        <br />
+        <p>Message:</p>
         <textarea value={message} id='message' onChange={handleChange} />
-        <br />
-        <br />
         <button onClick={sendMessage}>send</button>
       </div>
       <div className='icons'>
