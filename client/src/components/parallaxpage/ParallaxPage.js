@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { config } from 'react-spring';
 import { CTX } from 'context/Store';
-
+import ContactSection from 'components/ContactSection/ContactSection';
 import './ParallaxPage.scss';
 
 const ParallaxPage = () => {
@@ -22,7 +22,7 @@ const ParallaxPage = () => {
       pages={4}
       config={config.wobbly}
     >
-      <ParallaxLayer offset={0} speed={0.2}>
+      <ParallaxLayer offset={0} speed={0}>
         <div className='parallax-image-container'>
           <div className='parallax-image parallax-image1' />
         </div>
@@ -32,44 +32,36 @@ const ParallaxPage = () => {
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={1}>
         <div className='parallax-inner'>
-          THOMAS FOYDEL
+          <div className='title'>THOMAS FOYDEL</div>
           <p className='parallax-inner-text'>
             thomasjfoydel@gmail.com
-            <br />
-            I build web apps
-            <br />
-            Mostly MERN stack
+            <br />I build web apps. Mostly MERN stack.
           </p>
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1} speed={0.2}>
+      <ParallaxLayer offset={1} speed={0}>
         <div className='parallax-image-container'>
           <div className='parallax-image parallax-image2' />
         </div>
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={1} className='parallax-textlayer'>
         <div className='infobox'>
-          <h2>Perspiciatis dignissimos</h2>
+          <h2>Imagine how cool</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-            exercitationem temporibus totam iusto possimus accusamus, at
-            corrupti dolorum atque sequi hic nobis sint repellat eum aspernatur
-            dignissimos quia molestiae? Officiis, quibusdam architecto labore ab
-            modi porro, eius velit placeat saepe doloribus exercitationem
-            similique odit quod facilis consequatur. Eaque, temporibus aperiam
-            repudiandae libero consequuntur saepe dicta nemo quidem impedit.
-            Laborum, officia beatae dolore velit!
+            it would be if you hired me. You seem cool. I'm pretty cool myself.
+            Let's be cool together.
           </p>
         </div>
       </ParallaxLayer>
       <ParallaxLayer offset={1} speed={1}>
         <div className='parallax-inner'>
-          PORTFOLIO
-          <div className='prarallax-order-button'>some projects</div>
+          <div className='title'>PORTFOLIO</div>
+
+          {/* <div className='prarallax-order-button'>some projects</div> */}
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={0.2}>
+      <ParallaxLayer offset={2} speed={0}>
         <div className='parallax-image-container'>
           <div className='parallax-image parallax-image3' />
         </div>
@@ -91,21 +83,23 @@ const ParallaxPage = () => {
       </ParallaxLayer>
       <ParallaxLayer offset={2} speed={1}>
         <div className='parallax-inner'>
-          LONG
-          <br />
-          STORY
-          <br />
-          SHORT
+          <div className='title'>
+            LONG
+            <br />
+            STORY
+            <br />
+            SHORT
+          </div>
+
           {/* <p className='parallax-inner-text'>Short</p> */}
           <p className='parallax-inner-text'>
             I work for Northwestern University's coding bootcamp. I build web
-            apps with MongoDB, Node/Express, and React.
+            apps with MongoDB, Node/Express, and React. I am hungry and driven.
           </p>
-          <p className='parallax-inner-text'> I am hungry and driven.</p>
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={3} speed={0.2}>
+      <ParallaxLayer offset={3} speed={0}>
         <div className='parallax-image-container'>
           <div className='parallax-image parallax-image4' />
         </div>
@@ -120,7 +114,7 @@ const ParallaxPage = () => {
             as a tutor, grader, and learning assistant for Trilogy/2U's web
             development program. Before tech, I worked in healthcare (autism
             therapy). I love building web apps. I focus on the MERN stack, but I
-            have also build with other technologies such as MySQL and
+            have also built with other technologies such as MySQL and
             Handlebars. I am passionate about the potential for web technology
             to bring people closer together in new ways and improve quality of
             life. Some of my favorite things I've built with include web
@@ -130,7 +124,10 @@ const ParallaxPage = () => {
         </div>
       </ParallaxLayer>
       <ParallaxLayer offset={3} speed={1}>
-        <div className='parallax-inner'>CONTACT</div>
+        <div className='parallax-inner'>
+          {/* <div className='title'>CONTACT</div> */}
+          <ContactSection />
+        </div>
       </ParallaxLayer>
 
       {/* <ParallaxLayer offset={3} speed={1} className='parallax-textlayer'>

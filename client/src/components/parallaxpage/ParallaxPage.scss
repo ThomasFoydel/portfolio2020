@@ -6,50 +6,61 @@ $medium: 600px;
 }
 
 .parallax-inner {
-  position: absolute;
-  top: 10%;
-  transform: scaleY(1.1);
   width: 100%;
-  margin-left: 0.9rem;
-  height: 20rem;
-  z-index: 4;
-  text-align: center;
-  font-size: 9rem;
-  letter-spacing: 1.8rem;
+
+  // z-index: 4;
+
   color: white;
   cursor: default;
 
-  // MEDIUM
-  @media screen and (max-width: $large) {
-    font-size: 7rem;
-    line-height: 8rem;
-  }
-  // SMALL
-  @media screen and (max-width: $medium) {
-    font-size: 6rem;
-    line-height: 8rem;
+  .title {
+    // position: absolute;
+    // top: 20%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 9rem;
+    letter-spacing: 1.8rem;
+    // height: 20rem;
+    padding: 1rem 0;
+    margin-left: 1.8rem;
+    transform: scaleY(1.125);
+
+    // MEDIUM
+    @media screen and (max-width: $large) {
+      font-size: 7rem;
+      line-height: 8rem;
+    }
+    // SMALL
+    @media screen and (max-width: $medium) {
+      font-size: 6rem;
+      line-height: 8rem;
+    }
   }
 }
 
 .parallax-inner-text {
+  text-align: center;
   font-size: 1.4rem;
-  padding: 0 5rem;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.15rem;
   line-height: 2rem;
-  padding: 0.8rem;
-  background: rgba(0, 0, 0, 0.278);
+  padding: 0.8rem 2rem;
+  background: rgba(255, 255, 255, 0.78);
+  color: black;
   width: 90%;
   max-width: 70rem;
   margin-left: 50%;
   transform: translateX(-50%);
-  // height: auto;
+
   // MEDIUM
   @media screen and (max-width: $large) {
-    // font-size: 8rem;
+    font-size: 1.4rem;
   }
   // SMALL
   @media screen and (max-width: $medium) {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -59,6 +70,7 @@ $medium: 600px;
   width: 100%;
   // height: 95vh;
   height: 100vh;
+  // min-height: 60rem;
   background-size: cover;
   background-position: center center;
 }
@@ -169,8 +181,8 @@ $medium: 600px;
   border-radius: 200px;
   background-image: linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.5) 17%,
-      rgba(0, 0, 0, 0.5) 100%
+      rgba(0, 0, 0, 0.4) 17%,
+      rgba(0, 0, 0, 0.45) 100%
     ),
     url('../../imgs/me/headshot.jpg');
 }
